@@ -3,6 +3,7 @@ package jp.co.yahoo.example.hellocompose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -21,9 +22,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun NewsStory() {
-    Text("A day in Shark Fin Cove")
-    Text("Davenport, California")
-    Text("December 2018")
+    Column {
+        Text("A day in Shark Fin Cove")
+        Text("Davenport, California")
+        Text("December 2018")
+    }
 }
 
 @Preview
